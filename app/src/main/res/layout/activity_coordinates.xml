@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.girard.eugeniog.Coordinates">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgBG"
+        android:background="@drawable/macross"
+        android:layout_marginBottom="343dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X1"
+        android:id="@+id/x1T"
+        android:layout_above="@+id/y1T"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X2"
+        android:id="@+id/x2T"
+        android:layout_marginLeft="101dp"
+        android:layout_marginStart="101dp"
+        android:layout_above="@+id/y2T"
+        android:layout_toRightOf="@+id/x1T"
+        android:layout_toEndOf="@+id/x1T" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y1"
+        android:id="@+id/y1T"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y2"
+        android:id="@+id/y2T"
+        android:layout_alignTop="@+id/y1T"
+        android:layout_alignLeft="@+id/x2T"
+        android:layout_alignStart="@+id/x2T" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="X Differernce"
+        android:id="@+id/diffX"
+        android:layout_alignTop="@+id/diffY"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Y Difference"
+        android:id="@+id/diffY"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/y2T"
+        android:layout_toRightOf="@+id/y2T"
+        android:layout_toEndOf="@+id/y2T" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Motion"
+        android:id="@+id/moTn"
+        android:layout_alignTop="@+id/quad"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Quadrant"
+        android:id="@+id/quad"
+        android:layout_below="@+id/diffY"
+        android:layout_toRightOf="@+id/y2T"
+        android:layout_toEndOf="@+id/y2T"
+        android:layout_marginTop="52dp" />
+</RelativeLayout>
